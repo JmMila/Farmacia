@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+body {font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0;}
+
+header {padding: 50px; text-align: center; background-color: rgb(255, 0, 221);}
+
+nav {display: flex; flex-direction: row; background-color: rgb(220, 255, 21);}
+
+nav a {padding: 14px 20px; text-transform: none; color: rgb(0, 0, 0);}
+
+.row {display: flex; flex-wrap: wrap;}
+
+aside {flex: 30px; padding: 20px; background-color: rgb(54, 133, 223);}
+
+section {flex: 70%;padding: 20px; background-color: rgb(192, 50, 205);}
+
+footer {padding: 20px; text-align: center; background-color: rgb(9, 207, 75);
+}
+@media screen and (max-width: 700px){
+    nav, .row{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 900px){
+    nav, .row{
+        flex-direction: row-reverse;
+        background-color: lawngreen;
+    }
+}
